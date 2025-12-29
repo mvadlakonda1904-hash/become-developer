@@ -1,1 +1,226 @@
+## 3-Month Playwright + TypeScript Roadmap**
+
+---
+
+## **Month 1 – Beginner Stage**
+
+### **Week 1: TypeScript Basics**
+
+* **Topics**
+
+  * Variables (`let`, `const`, `var`) & data types
+  * Functions & arrow functions
+  * Basic interfaces & types
+  * Classes & objects
+* **Exercises**
+
+  * Write 5–10 simple functions using TypeScript types
+  * Create a class `Calculator` with methods `add`, `subtract`, etc.
+* **Mini-project**
+
+  * Build a small “To-Do List” CLI app using TypeScript classes and arrays
+
+---
+
+### **Week 2: TypeScript Advanced Basics**
+
+* **Topics**
+
+  * Modules (`export`/`import`)
+  * Async/await & Promises
+  * Try/Catch error handling
+* **Exercises**
+
+  * Create async functions simulating API calls using `Promise`
+  * Handle errors with `try/catch`
+* **Mini-project**
+
+  * Fetch dummy data from a fake API (like `jsonplaceholder`) and log results
+
+---
+
+### **Week 3: Playwright Setup & Basics**
+
+* **Topics**
+
+  * Install Playwright (`npm install playwright`)
+  * Playwright architecture: Browser, Context, Page
+  * Launch browsers (Chromium, Firefox, WebKit)
+  * Navigate pages (`goto`) and basic actions (click, fill, type)
+* **Exercises**
+
+  * Open a browser, navigate to Google, search something, take a screenshot
+* **Mini-project**
+
+  * Automate Google search and validate results using `expect`
+
+---
+
+### **Week 4: Playwright Selectors & Assertions**
+
+* **Topics**
+
+  * Locators: `locator()`, `getByText()`, `getByRole()`
+  * Assertions: `toBeVisible()`, `toHaveText()`, `toHaveValue()`
+  * Screenshot & basic debugging
+* **Exercises**
+
+  * Validate headings on Wikipedia
+  * Take screenshots of specific elements
+* **Mini-project**
+
+  * Automate login on a demo site like [https://demoqa.com/login](https://demoqa.com/login) and validate login success
+
+---
+
+## **Month 2 – Intermediate Stage**
+
+### **Week 5: Playwright Test Runner & POM**
+
+* **Topics**
+
+  * Playwright Test Runner basics: `test`, `test.describe`
+  * Setup & teardown (`beforeEach`, `afterEach`)
+  * Page Object Model (POM)
+* **Exercises**
+
+  * Create a POM for a login page
+  * Write 2–3 tests using POM structure
+* **Mini-project**
+
+  * Automate login + profile page navigation using POM
+
+---
+
+### **Week 6: Advanced Selectors & Wait Strategies**
+
+* **Topics**
+
+  * Handling dropdowns, checkboxes, radio buttons
+  * Ifames, popups, and alerts
+  * Wait strategies (`waitForSelector`, `waitForLoadState`)
+* **Exercises**
+
+  * Select items from dropdowns and validate selection
+  * Handle popups and alerts in demo sites
+* **Mini-project**
+
+  * Automate form submission on [https://demoqa.com/automation-practice-form](https://demoqa.com/automation-practice-form)
+
+---
+
+### **Week 7: Network & API Handling**
+
+* **Topics**
+
+  * Network interception: `route`, `onRequest`, `onResponse`
+  * Mocking API responses
+  * Testing APIs inside Playwright
+* **Exercises**
+
+  * Intercept a request on demo site and modify response
+  * Validate mocked responses using assertions
+* **Mini-project**
+
+  * Automate a login API call and validate response using Playwright test runner
+
+---
+
+### **Week 8: Debugging & Reporting**
+
+* **Topics**
+
+  * Debugging: `page.pause()`, `debug()`, VSCode integration
+  * Screenshots & video recording
+  * Playwright reporters (HTML, JSON)
+* **Exercises**
+
+  * Record a failing test and debug step by step
+  * Generate a report for multiple tests
+* **Mini-project**
+
+  * Build a small regression suite (3–4 tests) with screenshots and HTML reports
+
+---
+
+## **Month 3 – Advanced Stage**
+
+### **Week 9: Framework Design**
+
+* **Topics**
+
+  * Modular & reusable page objects
+  * Custom helper functions & commands
+  * Data-driven testing (JSON, CSV)
+  * Configuration (`playwright.config.ts`)
+* **Exercises**
+
+  * Refactor previous POM to include helpers and configs
+  * Read test data from JSON for login tests
+* **Mini-project**
+
+  * Automate login with multiple users from JSON data
+
+---
+
+### **Week 10: Advanced Playwright Features**
+
+* **Topics**
+
+  * Multi-page scenarios & tabs
+  * File uploads/downloads
+  * Shadow DOM handling
+  * Authentication (JWT, OAuth)
+* **Exercises**
+
+  * Automate multi-tab navigation and file download
+  * Handle a shadow DOM component
+* **Mini-project**
+
+  * Automate an e-commerce flow: login → add to cart → checkout → download invoice
+
+---
+
+### **Week 11: CI/CD Integration**
+
+* **Topics**
+
+  * GitHub Actions or Jenkins for Playwright
+  * Parallel & cross-browser execution
+  * Test retries for flaky tests
+* **Exercises**
+
+  * Run tests in parallel for Chromium, Firefox, WebKit
+  * Configure GitHub Actions to run tests on push
+* **Mini-project**
+
+  * Setup CI workflow to run your regression suite on every push
+
+---
+
+### **Week 12: Final Project & Best Practices**
+
+* **Topics**
+
+  * Best practices: maintainable selectors, reusable POMs, clean test logic
+  * Test documentation & reporting
+* **Mini-project**
+
+  * End-to-end automation of a demo e-commerce site:
+
+    * Login → search → add to cart → checkout → logout
+    * Include: multiple users, network mocking, screenshots, video recording, cross-browser run
+* **Deliverable**
+
+  * Fully functional Playwright + TypeScript automation framework
+
+---
+
+✅ **Outcome after 3 months:**
+
+* You can confidently write **robust Playwright tests** in TypeScript
+* Implement **Page Object Model** and reusable test framework
+* Handle **complex web interactions, network requests, authentication, and files**
+* Integrate tests with **CI/CD and reporting**
+
 
